@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC4BF3829D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4BF3729D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift */; };
 		1AE2C12629D429F6002D364D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12529D429F6002D364D /* AppDelegate.swift */; };
 		1AE2C12829D429F6002D364D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12729D429F6002D364D /* SceneDelegate.swift */; };
 		1AE2C12A29D429F6002D364D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12929D429F6002D364D /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC4BF3729D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCatalystMontereyTextSelectionCrashFix.swift; sourceTree = "<group>"; };
 		1AE2C12229D429F6002D364D /* testTextSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTextSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE2C12529D429F6002D364D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE2C12729D429F6002D364D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				1AE2C12E29D429F8002D364D /* Assets.xcassets */,
 				1AE2C13029D429F8002D364D /* LaunchScreen.storyboard */,
 				1AE2C13329D429F8002D364D /* Info.plist */,
+				1AC4BF3729D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift */,
 			);
 			path = testTextSelection;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC4BF3829D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift in Sources */,
 				1AE2C12A29D429F6002D364D /* ViewController.swift in Sources */,
 				1AE2C12629D429F6002D364D /* AppDelegate.swift in Sources */,
 				1AE2C12829D429F6002D364D /* SceneDelegate.swift in Sources */,
