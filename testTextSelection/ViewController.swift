@@ -24,23 +24,23 @@ class ViewController: UIViewController {
         //        view.addSubview(textView2)
         //        textView1.backgroundColor = .lightGray
         //        textView2.backgroundColor = .green
-        //
-        textView1.text = """
-TextKit 1
 
-Heading
-Paragraph
-😀 Point Plain
-•    Point Plain
+        textView1.delegate = self
+        textView2.delegate = self
+
+        textView1.text = """
+1
+😀
 """
         textView2.text = """
-TextKit 2
-
-Heading
-Paragraph
-😀 Point Plain
-•    Point Plain
+2
+😀
 """
     }
 }
 
+extension ViewController: UITextViewDelegate {
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        Swift.print("TTT textView \(Unmanaged.passUnretained(textView).toOpaque()) didChangeSelection \(textView.selectedTextRange)")
+    }
+}
