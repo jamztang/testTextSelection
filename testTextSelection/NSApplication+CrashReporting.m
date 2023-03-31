@@ -13,6 +13,7 @@
 - (NSArray *)mapObjectsUsingBlock:(id (^)(id obj, NSUInteger idx))block;
 @end
 
+/// Cannot extend NSApplication in Swift so we have to use Objective-C here
 @implementation NSApplication (CrashReporting)
 
 +(void)load {
