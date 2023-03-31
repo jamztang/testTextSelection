@@ -49,8 +49,10 @@ private func fixMontereyTextSelectionCrash() -> Bool {
 
 public extension NSString {
     @objc func safeGetCharacters(_ buffer: UnsafeMutablePointer<unichar>, range: NSRange) {
-        if range.location + range.length > self.length {
-            print("TTT out of bounds, prevent crash")
+        if range.location + range.length > length {
+            let safeRange = NSRange(location: range.location, length: length - range.location)
+            print("TTT trying to get character from \(range) but string length is \(length), fixing range to \(safeRange) prevent crash")
+            self.safeGetCharacters(buffer, range: safeRange)
         } else {
             self.safeGetCharacters(buffer, range: range) // original implementation
         }
