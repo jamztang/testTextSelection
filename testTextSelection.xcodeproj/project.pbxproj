@@ -10,8 +10,8 @@
 		1AC4BF3829D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4BF3729D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift */; };
 		1AC4BF3B29D6B8350041D133 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1AC4BF3A29D6B8350041D133 /* FirebaseAnalytics */; };
 		1AC4BF3D29D6B8350041D133 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1AC4BF3C29D6B8350041D133 /* FirebaseCrashlytics */; };
-		1AC4BF4829D6D89C0041D133 /* NSApplication+CrashReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4BF4729D6D89C0041D133 /* NSApplication+CrashReporting.m */; };
 		1AC4BF4A29D6E17C0041D133 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AC4BF4929D6E17C0041D133 /* GoogleService-Info.plist */; };
+		1AC4BF4C29D6EAF00041D133 /* MacCatalystReportCrashAsException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4BF4B29D6EAF00041D133 /* MacCatalystReportCrashAsException.swift */; };
 		1AE2C12629D429F6002D364D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12529D429F6002D364D /* AppDelegate.swift */; };
 		1AE2C12829D429F6002D364D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12729D429F6002D364D /* SceneDelegate.swift */; };
 		1AE2C12A29D429F6002D364D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2C12929D429F6002D364D /* ViewController.swift */; };
@@ -46,6 +46,7 @@
 		1AC4BF4629D6D89C0041D133 /* NSApplication+CrashReporting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSApplication+CrashReporting.h"; sourceTree = "<group>"; };
 		1AC4BF4729D6D89C0041D133 /* NSApplication+CrashReporting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+CrashReporting.m"; sourceTree = "<group>"; };
 		1AC4BF4929D6E17C0041D133 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AC4BF4B29D6EAF00041D133 /* MacCatalystReportCrashAsException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCatalystReportCrashAsException.swift; sourceTree = "<group>"; };
 		1AE2C12229D429F6002D364D /* testTextSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTextSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE2C12529D429F6002D364D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE2C12729D429F6002D364D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 				1AE2C13029D429F8002D364D /* LaunchScreen.storyboard */,
 				1AE2C13329D429F8002D364D /* Info.plist */,
 				1AC4BF3729D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift */,
+				1AC4BF4B29D6EAF00041D133 /* MacCatalystReportCrashAsException.swift */,
 				1AC4BF4629D6D89C0041D133 /* NSApplication+CrashReporting.h */,
 				1AC4BF4729D6D89C0041D133 /* NSApplication+CrashReporting.m */,
 			);
@@ -286,11 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC4BF4829D6D89C0041D133 /* NSApplication+CrashReporting.m in Sources */,
 				1AC4BF3829D53DB30041D133 /* MacCatalystMontereyTextSelectionCrashFix.swift in Sources */,
 				1AE2C12A29D429F6002D364D /* ViewController.swift in Sources */,
 				1AE2C12629D429F6002D364D /* AppDelegate.swift in Sources */,
 				1AE2C12829D429F6002D364D /* SceneDelegate.swift in Sources */,
+				1AC4BF4C29D6EAF00041D133 /* MacCatalystReportCrashAsException.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

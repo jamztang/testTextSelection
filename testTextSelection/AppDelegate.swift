@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "NSApplicationCrashOnExceptions": true
         ])
         setupFirebase()
-//        installMacCatalystFirebaseCrashImprovement()
+        installMacCatalystReportCrashAsException()
         return true
     }
 
