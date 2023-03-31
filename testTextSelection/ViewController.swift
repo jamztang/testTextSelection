@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 
         textView1.delegate = self
         textView2.delegate = self
+        textView1.autocorrectionType = .no
 
         textView1.text = """
 1
