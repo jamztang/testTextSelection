@@ -1,11 +1,7 @@
 //
-//  MontereyTextSelectionCrashFix.swift
-//  testTextSelection
+//  MacCatalystReportCrashAsException.swift
 //
-//  Created by James Tang on 30/3/2023.
-//
-//
-// Call installMontereyNSApplicationCrashReporting() from your App Delegate
+// Call installMacCatalystReportCrashAsException() from your App Delegate
 //
 
 import Foundation
@@ -55,10 +51,8 @@ private func fixMacCatalystReportCrashAsException() -> Bool {
 
         // Note: ExceptionModel will always be reported as a non-fatal.
         Crashlytics.crashlytics().record(exceptionModel: errorModel)
-        print("Recording this exception `\(exception)` instead of crashing")
-        exception.callStackSymbols.forEach { callStack in
-            print(callStack)
-        }
+        print("Recording this exception instead of crashing `\(exception)`")
+        print(exception.callStackSymbols.joined(separator: "\n"))
 
         /// avoid calling to prevent crashing
         // let callableIMP = unsafeBitCast(origIMP, to: ClosureType.self)
